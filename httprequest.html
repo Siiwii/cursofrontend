@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <title>HTTP Request - SiwiWeb</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">SiwiWeb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="receta.html">Receta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="httprequest.html">HTTP Request<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <div class="row justify-content-center">
+            <h2 class="titulo">HTTP Request</h2>
+        </div>
+            <div class="row justify-content-center" style="margin-bottom:25px;">
+                    <form onsubmit="return httprequest();"></form>
+                    <input type="submit" class="btn btn-outline-success" value="Enviar">
+                    </form>
+            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <table class="table">
+                            <tr>
+                              <th>Firstname</th>
+                              <th>Lastname</th>
+                              <th>Email</th>
+                            </tr>
+                          <tbody>
+                            <tr>
+                              <td id="firstname1"></td>
+                              <td id="lastname"></td>
+                              <td id="mail"></td>
+                            </tr>
+                            <tr>
+                              <td id="firstname2">Mary</td>
+                              <td id="lastname">Moe</td>
+                              <td id="mail">mary@example.com</td>
+                            </tr>
+                            <tr>
+                              <td id="firstname3">July</td>
+                              <td id="lastname">Dooley</td>
+                              <td id="mail">july@example.com</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+            <script src="httprequest.js"></script>
+</body>
+
+</html>

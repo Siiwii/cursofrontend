@@ -1,1 +1,8 @@
 bem.info -> Convenciones
+
+Clase 5 ->>
+Javascript: Promises, Callbacks, HTTP Request (Verbos HTTP)
+NPM: Descargar bootstrap local con npm
+https://www.w3schools.com/js/js_json_http.asp
+
+Clase 6: Crear una clase

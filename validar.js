@@ -40,7 +40,7 @@ function validar() {
     else if (!numverif.test(zip)){
         alert("Debes completar el campo del código postal solo con números")
     }
-    else if (!document.getElementById("checkbox1").checked{
+    else if (!document.getElementById("checkbox1").checked){
         alert("Debes aceptar los términos y condiciones del servicio")
     }
     return false;
